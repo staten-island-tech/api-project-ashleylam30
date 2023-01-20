@@ -4,12 +4,35 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/style.css">
     <title>API Project</title>
   </head>
   <body>
     <div id="app"></div>
-    <script type="module" src="../js/main.js"></script>
-  </body>
-</html>
-<h1>What music would you like to listen to?</h1>
+     <script type="module" src="./js/main.js" ></script>
+    
+ 
+<h1>Which Pokemon do you want to see? MEOW? zhi hao smells</h1>
+<form method="get">
+  <label>Name:
+    <input id="input" name="submitted-name" autocomplete="name" />
+  </label>
+  <button id="btn">Save</button>
+</form>
+<div>
+ 
+  <input type="range" id="rate" name="cuteness" list="values" />
+  
+  <datalist id="values">
+    <option value="0" label="very ugly man!"></option>
+    <option value="2" label="a little less ugly"></option>
+    <option value="5" label="mid"></option>
+    <option value="7" label="pretty cute"></option>
+    <option value="10" label="CUTEST ONE EVER"></option> -->
+  </datalist>
+</div>
+<div id="page">
 
+</div>
+</body>
+</html>
