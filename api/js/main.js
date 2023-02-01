@@ -1,22 +1,24 @@
 import { DOM } from "../js/DOM.js";
 import "../styles/style.css";
 
-const link = `https://pokeapi.co/api/v2/pokemon/`;
+const api = `https://pokeapi.co/api/v2/pokemon/`;
 
-async function api(url) {
-  const response = await fetch(url);
-  const data = await response.json();
+async function apifunction(url) {
+  const res = await fetch(url);
+  const data = await res.json();
   console.log(data);
-  let input = DOM.input.value;
-  DOM.btn.addEventListener("click", function () {
-    DOM.page.insertAdjacentHTML(
-      "beforeend",
-      `<div>
-    <img src="${data.sprites.front_default}"><img>
-    </div>`
-    );
-  });
+  DOM.page.insertAdjacentHTML(
+    "beforeend",
+    `
+  
+  <div>
+  <img src=""><img>
+  </div>
+  `
+  );
 }
-api(link);
 
-DOM.btn;
+DOM.btn.addEventListener("click", function (event) {
+  event.preventDefault();
+  apifunction(api);
+});
