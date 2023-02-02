@@ -19,3 +19,15 @@ img {
     max-height: 40%;
     padding-top: 10rem;
   }
+
+  .parent{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .child{
+    text-align: center;
+    width: 500px;
+    height: 800px;
+  }
