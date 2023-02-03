@@ -17,6 +17,7 @@ async function apifunction(url) {
 }
 
 DOM.btn.addEventListener("click", function (event) {
+  DOM.page.innerHTML = "";
   let input = DOM.input.value;
   let api = `https://pokeapi.co/api/v2/pokemon/${input}`;
   event.preventDefault();
